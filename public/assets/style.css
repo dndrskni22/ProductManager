@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Pacifico&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFF9F5;
+    color: #4A3E3D;
+}
+
+header {
+    background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+    padding: 24px;
+    text-align: center;
+    color: #5A2A2A;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+}
+
+input, select, button, textarea {
+    padding: 10px 14px;
+    border: 1px solid #E2D0D0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button, .btn {
+    background-color: #FF6B8B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #E85273;
+}
+
+.btn-danger {
+    background-color: #E74C3C;
+}
+
+.btn-danger:hover {
+    background-color: #C0392B;
+}
+
+.btn-secondary {
+    background-color: #95A5A6;
+}
+
+/* Flexbox Grid untuk Menu Card */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1 1 260px;
+    max-width: 340px;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #FFF0F3;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background-color: #F8ECEE;
+}
+
+.card-body {
+    padding: 16px;
+    flex-grow: 1;
+}
+
+.badge {
+    background-color: #FFE3E8;
+    color: #D81B60;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-title {
+    margin: 10px 0 6px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #D81B60;
+    margin-bottom: 8px;
+}
+
+.stock {
+    font-size: 13px;
+    color: #777;
+}
+
+.card-actions {
+    padding: 16px;
+    background: #FAFAFA;
+    border-top: 1px solid #F0F0F0;
+    display: flex;
+    gap: 8px;
+}
+
+.alert {
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-success { background: #D4EDDA; color: #155724; }
+.alert-error { background: #F8D7DA; color: #721C24; }
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+}
+/* Styling Judul Brand Aesthetic */
+.brand-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  color: #c2185b;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px 8px rgba(194, 24, 91, 0.15);
+}
+
+.brand-subtitle {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.05rem;
+  color: #880e4f;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
